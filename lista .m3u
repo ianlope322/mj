@@ -1,4 +1,5 @@
 #EXTM3U
+
 #EXTINF:-1 tvg-id="" tvg-name="DW Español" tvg-logo="https://i.imgur.com/o7aO8fF.png" group-title="Noticias",DW Español
 https://dwamdstream104.akamaized.net/hls/live/2015531/dwstream104/index.m3u8
 
@@ -10,3 +11,63 @@ https://ythls.armelin.one/channel/UCumGaCo2aBaLddGgJ4KyTXA.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="Televisión Pública Argentina" tvg-logo="https://i.imgur.com/LnbZ3uY.png" group-title="Argentina",TV Pública
 https://ythls.armelin.one/channel/UCs231K71Bnu5295_x0MB5Pg.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Telefe" tvg-logo="https://i.imgur.com/telefe.png" group-title="Argentina",Telefe
+https://tvlivre.online/en-vivo/telefe/hl.html
+
+#EXTINF:-1 tvg-id="" tvg-name="Todo Noticias" tvg-logo="https://i.imgur.com/todonoticias.png" group-title="Argentina",Todo Noticias
+https://bestleague.one/cvatt.html?get=VG9kb05vdGljaWFz
+
+#EXTINF:-1 tvg-id="" tvg-name="Artear HD" tvg-logo="https://i.imgur.com/artear.png" group-title="Argentina",Artear HD
+https://bestleague.one/cvatt.html?get=QXJ0ZWFySEQ
+
+#EXTINF:-1 tvg-id="" tvg-name="América TV" tvg-logo="https://i.imgur.com/americatv.png" group-title="Argentina",América TV
+https://bestleague.one/cvatt.html?get=QW1lcmljYVRW
+
+#EXTINF:-1 tvg-id="" tvg-name="Canal 9" tvg-logo="https://i.imgur.com/canal9.png" group-title="Argentina",Canal 9
+https://bestleague.one/cvatt.html?get=Q2FuYWw5
+
+#EXTINF:-1 tvg-id="" tvg-name="América 24" tvg-logo="https://i.imgur.com/america24.png" group-title="Argentina",América 24
+https://bestleague.one/cvatt.html?get=QW1lcmljYTI0
+
+#EXTINF:-1 tvg-id="" tvg-name="26 TV HD" tvg-logo="https://i.imgur.com/26tv.png" group-title="Argentina",26 TV HD
+https://bestleague.one/cvatt.html?get=MjZfVFZfSEQ
+
+#EXTINF:-1 tvg-id="" tvg-name="Crónica TV" tvg-logo="https://i.imgur.com/cronicatv.png" group-title="Argentina",Crónica TV
+https://bestleague.one/cvatt.html?get=Q3JvbmljYVRW
+
+#EXTINF:-1 tvg-id="" tvg-name="La Nación" tvg-logo="https://i.imgur.com/lanacion.png" group-title="Argentina",La Nación
+https://bestleague.one/cvatt.html?get=TGFfTmFjaW9u
+
+#EXTINF:-1 tvg-id="" tvg-name="Canal 7" tvg-logo="https://i.imgur.com/canal7.png" group-title="Argentina",Canal 7
+https://bestleague.one/cvatt.html?get=Q2FuYWw3
+
+#EXTINF:-1 tvg-id="" tvg-name="Animal Planet" tvg-logo="https://i.imgur.com/animalplanet.png" group-title="Entretenimiento",Animal Planet
+https://bestleague.one/cvatt.html?get=QW5pbWFsUGxhbmV0
+
+#EXTINF:-1 tvg-id="" tvg-name="Warner HD" tvg-logo="https://i.imgur.com/warner.png" group-title="Entretenimiento",Warner HD
+https://bestleague.one/cvatt.html?get=V2FybmVySEQ=&lang=1
+
+#EXTINF:-1 tvg-id="" tvg-name="HBO HD" tvg-logo="https://i.imgur.com/hbo.png" group-title="Entretenimiento",HBO HD
+https://bestleague.one/cvatt.html?get=SEJPSEQ=&lang=1
+
+#EXTINF:-1 tvg-id="" tvg-name="Cartoon Network" tvg-logo="https://i.imgur.com/cartoon.png" group-title="Kids",Cartoon Network
+https://bestleague.one/cvatt.html?get=Q2FydG9vbk5ldHdvcms=
+
+#EXTINF:-1 tvg-id="" tvg-name="C5N" tvg-logo="https://i.imgur.com/c5n.png" group-title="Noticias",C5N
+https://bestleague.one/cvatt.html?get=QzVO
+
+#EXTINF:-1 tvg-id="" tvg-name="TyC Sports" tvg-logo="https://i.imgur.com/tycsports.png" group-title="Deportes",TyC Sports
+https://bestleague.one/cvatt.html?get=VHlDU3BvcnQ
+
+#EXTINF:-1 tvg-id="" tvg-name="TyC Sports 2" tvg-logo="https://i.imgur.com/tycsports2.png" group-title="Deportes",TyC Sports 2
+https://bestleague.one/cvatt.html?get=VHlDU3BvcnQ
+
+#EXTINF:-1 tvg-id="" tvg-name="Rereyano" tvg-logo="https://i.imgur.com/rereyano.png" group-title="Deportes",Rereyano
+https://rereyano.ru/player/3/94
+
+#EXTINF:-1 tvg-id="" tvg-name="DSports" tvg-logo="https://i.imgur.com/dsports.png" group-title="Deportes",DSports
+https://streamtp4.com/global2.php?stream=dsports
+
+#EXTINF:-1 tvg-id="" tvg-name="Canal 7 Extensión" tvg-logo="https://i.imgur.com/canal7ext.png" group-title="Argentina",Canal 7 Extensión
+https://bestleague.one/cvatt.html?get=Q2FuYWw3&start=true
