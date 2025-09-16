@@ -1,0 +1,12 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="DW Español" tvg-logo="https://i.imgur.com/o7aO8fF.png" group-title="Noticias",DW Español
+https://dwamdstream104.akamaized.net/hls/live/2015531/dwstream104/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="RT en Español" tvg-logo="https://i.imgur.com/2Tn5HnB.png" group-title="Noticias",RT en Español
+https://rt-esp.rttv.com/live/rtesp/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Canal 26" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/09/Canal26_logo.png" group-title="Argentina",Canal 26
+https://ythls.armelin.one/channel/UCumGaCo2aBaLddGgJ4KyTXA.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Televisión Pública Argentina" tvg-logo="https://i.imgur.com/LnbZ3uY.png" group-title="Argentina",TV Pública
+https://ythls.armelin.one/channel/UCs231K71Bnu5295_x0MB5Pg.m3u8
