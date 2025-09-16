@@ -1,115 +1,73 @@
-ian, [16/9/2025 02:32]
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mi TV Online</title>
-  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
-  <style>
-    :root { color-scheme: dark; }
-    body{margin:0;background:#000;font-family:system-ui,Segoe UI,Roboto,Arial;color:#ddd;}
-    header{display:flex;gap:12px;align-items:center;padding:12px;flex-wrap:wrap;background:#101014;position:sticky;top:0;z-index:2}
-    select,button{padding:8px 12px;background:#1b1e28;border:1px solid #2a2f3f;color:#eee;border-radius:8px}
-    #wrap{max-width:1080px;margin:16px auto;padding:0 12px}
-    #playerBox{position:relative;aspect-ratio:16/9;background:#111;border-radius:12px;overflow:hidden}
-    .hidden{display:none}
-    iframe, video{width:100%;height:100%}
-    footer{opacity:.7;text-align:center;padding:12px}
-  </style>
-</head>
-<body>
-  <header>
-    <strong>📺 Mi TV Online</strong>
-    <select id="canalSel"></select>
-    <button id="recargar">Recargar</button>
-  </header>
+#EXTM3U
 
-  <div id="wrap">
-    <div id="playerBox">
-      <!-- Player HLS -->
-      <video id="vjs" class="video-js vjs-default-skin hidden" controls preload="auto" playsinline></video>
-      <!-- Iframe fallback -->
-      <iframe id="ifm" class="" allowfullscreen referrerpolicy="no-referrer"></iframe>
-    </div>
-    <footer>Nota: algunos sitios pueden bloquear la reproducción embebida o caerse con el tiempo.</footer>
-  </div>
+#EXTINF:-1 tvg-id="" tvg-name="DW Español" tvg-logo="https://i.imgur.com/o7aO8fF.png" group-title="Noticias",DW Español
+https://dwamdstream104.akamaized.net/hls/live/2015531/dwstream104/index.m3u8
 
-  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
-  <script>
-    // Lista de canales (los que me pasaste)
-    const canales = [
-      { nombre: "Telefe (tvlivre)", url: "https://tvlivre.online/en-vivo/telefe/hl.html" },
-      { nombre: "VG9: TodoNoticias", url: "https://bestleague.one/cvatt.html?get=VG9kb05vdGljaWFz" },
-      { nombre: "Artear HD", url: "https://bestleague.one/cvatt.html?get=QXJ0ZWFySEQ" },
-      { nombre: "América TV", url: "https://bestleague.one/cvatt.html?get=QW1lcmljYVRW" },
-      { nombre: "Canal 9", url: "https://bestleague.one/cvatt.html?get=Q2FuYWw5" },
-      { nombre: "América 24", url: "https://bestleague.one/cvatt.html?get=QW1lcmljYTI0" },
-      { nombre: "Canal 26 HD", url: "https://bestleague.one/cvatt.html?get=MjZfVFZfSEQ" },
-      { nombre: "Crónica TV", url: "https://bestleague.one/cvatt.html?get=Q3JvbmljYVRW" },
-      { nombre: "La Nación+", url: "https://bestleague.one/cvatt.html?get=TGFfTmFjaW9u" },
-      { nombre: "Canal 7 (TV Pública)", url: "https://bestleague.one/cvatt.html?get=Q2FuYWw3" },
-      { nombre: "Animal Planet", url: "https://bestleague.one/cvatt.html?get=QW5pbWFsUGxhbmV0" },
-      { nombre: "Warner HD (lang=1)", url: "https://bestleague.one/cvatt.html?get=V2FybmVySEQ=&lang=1" },
-      { nombre: "HBO HD (lang=1)", url: "https://bestleague.one/cvatt.html?get=SEJPSEQ=&lang=1" },
-      { nombre: "Cartoon Network", url: "https://bestleague.one/cvatt.html?get=Q2FydG9vbk5ldHdvcms=" },
-      { nombre: "C5N", url: "https://bestleague.one/cvatt.html?get=QzVO" },
-      { nombre: "Telefe (tvlivre) 2", url: "https://tvlivre.online/en-vivo/telefe/hl.html" },
-      { nombre: "TyC Sports", url: "https://bestleague.one/cvatt.html?get=VHlDU3BvcnQ" },
-      { nombre: "TyC Sports (copia)", url: "https://bestleague.one/cvatt.html?get=VHlDU3BvcnQ" },
-      { nombre: "3/94 (rereyano)", url: "https://rereyano.ru/player/3/94" },
-      { nombre: "DSports (streamtp4)", url: "https://streamtp4.com/global2.php?stream=dsports" },
-      { nombre: "Canal 7 (auto-start)", url: "https://bestleague.one/cvatt.html?get=Q2FuYWw3&start=true" },
-    ];
+#EXTINF:-1 tvg-id="" tvg-name="RT en Español" tvg-logo="https://i.imgur.com/2Tn5HnB.png" group-title="Noticias",RT en Español
+https://rt-esp.rttv.com/live/rtesp/playlist.m3u8
 
-    // Utilidades
-    const canalSel = document.getElementById('canalSel');
-    const ifm = document.getElementById('ifm');
-    const vjsEl = document.getElementById('vjs');
-    const player = videojs(vjsEl);
+#EXTINF:-1 tvg-id="" tvg-name="Canal 26" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/09/Canal26_logo.png" group-title="Argentina",Canal 26
+https://ythls.armelin.one/channel/UCumGaCo2aBaLddGgJ4KyTXA.m3u8
 
-    // Cargar lista
-    canales.forEach((c, i) => {
-      const op = document.createElement('option');
-      op.value = c.url;
-      op.textContent = c.nombre;
-      canalSel.appendChild(op);
-    });
+#EXTINF:-1 tvg-id="" tvg-name="Televisión Pública Argentina" tvg-logo="https://i.imgur.com/LnbZ3uY.png" group-title="Argentina",TV Pública
+https://ythls.armelin.one/channel/UCs231K71Bnu5295_x0MB5Pg.m3u8
 
-ian, [16/9/2025 02:32]
-// Detecta si es HLS (m3u8) para usar Video.js; si no, usa iframe.
-    function esHLS(url){
-      return /m3u8(\b|$)/i.test(url);
-    }
+#EXTINF:-1 tvg-id="" tvg-name="Telefe" tvg-logo="https://i.imgur.com/telefe.png" group-title="Argentina",Telefe
+https://tvlivre.online/en-vivo/telefe/hl.html
 
-    function reproducir(url){
-      // Limpia estados
-      player.pause();
-      player.reset();
-      vjsEl.classList.add('hidden');
-      ifm.classList.add('hidden');
+#EXTINF:-1 tvg-id="" tvg-name="Todo Noticias" tvg-logo="https://i.imgur.com/todonoticias.png" group-title="Argentina",Todo Noticias
+https://bestleague.one/cvatt.html?get=VG9kb05vdGljaWFz
 
-      if (esHLS(url)) {
-        // Player HLS
-        player.src({ src: url, type: 'application/x-mpegURL' });
-        vjsEl.classList.remove('hidden');
-        player.play().catch(()=>{});
-      } else {
-        // Iframe
-        ifm.src = url;
-        ifm.classList.remove('hidden');
-      }
-    }
+#EXTINF:-1 tvg-id="" tvg-name="Artear HD" tvg-logo="https://i.imgur.com/artear.png" group-title="Argentina",Artear HD
+https://bestleague.one/cvatt.html?get=QXJ0ZWFySEQ
 
-    // Eventos
-    canalSel.addEventListener('change', e => reproducir(e.target.value));
-    document.getElementById('recargar').addEventListener('click', () => {
-      const url = canalSel.value;
-      reproducir(url);
-    });
+#EXTINF:-1 tvg-id="" tvg-name="América TV" tvg-logo="https://i.imgur.com/americatv.png" group-title="Argentina",América TV
+https://bestleague.one/cvatt.html?get=QW1lcmljYVRW
 
-    // Auto play primero
-    reproducir(canales[0].url);
-  </script>
-</body>
-</html>
+#EXTINF:-1 tvg-id="" tvg-name="Canal 9" tvg-logo="https://i.imgur.com/canal9.png" group-title="Argentina",Canal 9
+https://bestleague.one/cvatt.html?get=Q2FuYWw5
+
+#EXTINF:-1 tvg-id="" tvg-name="América 24" tvg-logo="https://i.imgur.com/america24.png" group-title="Argentina",América 24
+https://bestleague.one/cvatt.html?get=QW1lcmljYTI0
+
+#EXTINF:-1 tvg-id="" tvg-name="26 TV HD" tvg-logo="https://i.imgur.com/26tv.png" group-title="Argentina",26 TV HD
+https://bestleague.one/cvatt.html?get=MjZfVFZfSEQ
+
+#EXTINF:-1 tvg-id="" tvg-name="Crónica TV" tvg-logo="https://i.imgur.com/cronicatv.png" group-title="Argentina",Crónica TV
+https://bestleague.one/cvatt.html?get=Q3JvbmljYVRW
+
+#EXTINF:-1 tvg-id="" tvg-name="La Nación" tvg-logo="https://i.imgur.com/lanacion.png" group-title="Argentina",La Nación
+https://bestleague.one/cvatt.html?get=TGFfTmFjaW9u
+
+#EXTINF:-1 tvg-id="" tvg-name="Canal 7" tvg-logo="https://i.imgur.com/canal7.png" group-title="Argentina",Canal 7
+https://bestleague.one/cvatt.html?get=Q2FuYWw3
+
+#EXTINF:-1 tvg-id="" tvg-name="Animal Planet" tvg-logo="https://i.imgur.com/animalplanet.png" group-title="Entretenimiento",Animal Planet
+https://bestleague.one/cvatt.html?get=QW5pbWFsUGxhbmV0
+
+#EXTINF:-1 tvg-id="" tvg-name="Warner HD" tvg-logo="https://i.imgur.com/warner.png" group-title="Entretenimiento",Warner HD
+https://bestleague.one/cvatt.html?get=V2FybmVySEQ=&lang=1
+
+#EXTINF:-1 tvg-id="" tvg-name="HBO HD" tvg-logo="https://i.imgur.com/hbo.png" group-title="Entretenimiento",HBO HD
+https://bestleague.one/cvatt.html?get=SEJPSEQ=&lang=1
+
+#EXTINF:-1 tvg-id="" tvg-name="Cartoon Network" tvg-logo="https://i.imgur.com/cartoon.png" group-title="Kids",Cartoon Network
+https://bestleague.one/cvatt.html?get=Q2FydG9vbk5ldHdvcms=
+
+#EXTINF:-1 tvg-id="" tvg-name="C5N" tvg-logo="https://i.imgur.com/c5n.png" group-title="Noticias",C5N
+https://bestleague.one/cvatt.html?get=QzVO
+
+#EXTINF:-1 tvg-id="" tvg-name="TyC Sports" tvg-logo="https://i.imgur.com/tycsports.png" group-title="Deportes",TyC Sports
+https://bestleague.one/cvatt.html?get=VHlDU3BvcnQ
+
+#EXTINF:-1 tvg-id="" tvg-name="TyC Sports 2" tvg-logo="https://i.imgur.com/tycsports2.png" group-title="Deportes",TyC Sports 2
+https://bestleague.one/cvatt.html?get=VHlDU3BvcnQ
+
+#EXTINF:-1 tvg-id="" tvg-name="Rereyano" tvg-logo="https://i.imgur.com/rereyano.png" group-title="Deportes",Rereyano
+https://rereyano.ru/player/3/94
+
+#EXTINF:-1 tvg-id="" tvg-name="DSports" tvg-logo="https://i.imgur.com/dsports.png" group-title="Deportes",DSports
+https://streamtp4.com/global2.php?stream=dsports
+
+#EXTINF:-1 tvg-id="" tvg-name="Canal 7 Extensión" tvg-logo="https://i.imgur.com/canal7ext.png" group-title="Argentina",Canal 7 Extensión
+https://bestleague.one/cvatt.html?get=Q2FuYWw3&start=true
